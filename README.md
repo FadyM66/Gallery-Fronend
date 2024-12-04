@@ -5,7 +5,7 @@ This is the Frontend of the Gallery project, built with React.
 
 # 1. Clone the existing React project repository
 ```bash
-git clone https://github.com/your-username/your-react-repo.git .
+git clone https://github.com/FadyM66/Gallery-Fronend.git
 ```
 
 # 2. change dir
