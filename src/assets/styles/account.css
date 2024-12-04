@@ -1,0 +1,74 @@
+
+#signin-form,
+#signup-form {
+    padding-left: 10rem;
+    padding-top: 5rem;
+    width: fit-content;
+}
+
+#signin-form form,
+#signup-form form {
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.359);
+}
+
+#signin-form form h2,
+#signup-form form h2 {
+    text-align: center;
+    font-family: var(--font-1-);
+    margin-bottom: 2rem;
+}
+
+#signin-form form label,
+#signup-form form label {
+    margin-bottom: 0.5rem;
+    font-family: var(--font-1-);
+}
+
+#signin-form form input,
+#signup-form form input {
+    margin-bottom: 1rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.359);
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.277);
+    padding: 1rem 2rem;
+    font-size: medium;
+}
+
+#signin-form form input:focus,
+#signup-form form input:focus {
+    outline: none;
+    border: none;
+}
+#signin-form form input[type="submit"],
+#signup-form form input[type="submit"] {
+    background-color : rgba(200, 200, 200, 0.9);
+    margin-top: 0.5rem;
+    transition: all 0.3s;
+}
+
+#signin-form form input[type="submit"]:hover,
+#signup-form form input[type="submit"]:hover {
+    background-color : rgba(200, 200, 200, 0.65);
+}
+
+#signin-form form input[type="submit"]:active,
+#signup-form form input[type="submit"]:active {
+    background-color : rgba(0, 0, 255, 0.145);
+}
+
+#signup-option, #signin-option {
+    text-align: center;
+    font-family: var(--font-1-);
+}
+
+#signup-option span, #signin-option span {
+    font-weight: 600;
+    cursor: pointer;
+}

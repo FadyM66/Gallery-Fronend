@@ -1,0 +1,14 @@
+#logo {
+    font-family: var(--font-1-);
+    font-size: xx-large;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    color: rgba(0, 0, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+#logo:hover {
+    color: rgba(103, 72, 239, 0.92);
+}
