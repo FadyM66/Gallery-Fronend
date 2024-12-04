@@ -36,7 +36,7 @@ const UploadCard = () => {
         }
 
         const {response, data} = await fetcher(
-            'http://localhost:8000/images/upload',
+            'https://gallery-backend-i8pdbvxs0-fady-mohsens-projects-42394b73.vercel.app/images/upload',
             "POST",
             {"description":desc, "image":file});
 

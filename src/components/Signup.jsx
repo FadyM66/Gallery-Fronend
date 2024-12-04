@@ -23,7 +23,7 @@ const Singup = () => {
 
     const handleConfirm = async (inputValue) => {
         const { response, data } = await fetcher(
-            'http://localhost:8000/auth/verify-otp', 
+            'https://gallery-backend-i8pdbvxs0-fady-mohsens-projects-42394b73.vercel.app/auth/verify-otp', 
             "POST",
             { "otp": inputValue },
             true
@@ -60,7 +60,7 @@ const Singup = () => {
         validationSchema: signupSchema,
         onSubmit: async (values) => {
             const {response, data} = await fetcher(
-                'http://localhost:8000/auth/register',
+                'https://gallery-backend-i8pdbvxs0-fady-mohsens-projects-42394b73.vercel.app/auth/register',
                 "POST",
                 values,
                 true

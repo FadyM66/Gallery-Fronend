@@ -15,7 +15,7 @@ const Description = ({ image_id, desc }) => {
     const handleSaveClick = async () => {
 
         await fetcher(
-            "http://localhost:8000/images/update-description",
+            "https://gallery-backend-i8pdbvxs0-fady-mohsens-projects-42394b73.vercel.app/images/update-description",
             "POST",
             { image_id, "description":editedDesc }
         );
