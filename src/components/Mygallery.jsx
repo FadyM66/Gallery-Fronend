@@ -2,7 +2,6 @@ import React, { createContext, useState } from 'react';
 import '../assets/styles/dashboard.css';
 import ConfirmationPrompt from './ConfirmPrompt';
 import { useNavigate } from 'react-router-dom';
-import Board from './Board';
 import Cookies from 'js-cookie';
 import UploadCard from './UploadCard.jsx';
 
