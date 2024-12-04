@@ -16,7 +16,7 @@ const ImageDetails = () => {
 
     const handleConfirm = async (image_id) => {
         const { response, data } = await fetcher(
-            `https://gallery-backend-i8pdbvxs0-fady-mohsens-projects-42394b73.vercel.app/images/delete-image`,
+            `http://localhost:8000/images/delete-image`,
             "POST",
             { 'image_id': image_id }
         );
@@ -32,7 +32,7 @@ const ImageDetails = () => {
     useEffect(() => {
         const fetchData = async () => {
             const { response, data } = await fetcher(
-                `https://gallery-backend-i8pdbvxs0-fady-mohsens-projects-42394b73.vercel.app/images/${image_id}`,
+                `http://localhost:8000/images/${image_id}`,
                 "GET"
             );
             if (response.status == 200) {

@@ -32,7 +32,7 @@ const Singin = () => {
         validationSchema: signinSchema,
         onSubmit: async (values) => {
             const {response, data} = await fetcher(
-                'https://gallery-backend-i8pdbvxs0-fady-mohsens-projects-42394b73.vercel.app/auth/login',
+                'http://localhost:8000/auth/login',
                 "POST",
                 values
             )

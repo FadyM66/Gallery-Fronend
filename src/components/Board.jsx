@@ -13,7 +13,7 @@ const Board = () => {
     useEffect(() => {
         const fetchData = async () => {
             const { response, data } = await fetcher(
-                "https://gallery-backend-i8pdbvxs0-fady-mohsens-projects-42394b73.vercel.app/images/",
+                "http//localhost:8000/images/",
                 "GET"
             );
             if (response.status == 200) {
