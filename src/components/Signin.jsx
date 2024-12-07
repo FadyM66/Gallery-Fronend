@@ -32,7 +32,7 @@ const Singin = () => {
         validationSchema: signinSchema,
         onSubmit: async (values) => {
             const {response, data} = await fetcher(
-                'http://localhost:8000/auth/login',
+                'https://tfhmptlcmi.execute-api.eu-north-1.amazonaws.com/production/auth/login',
                 "POST",
                 values
             )

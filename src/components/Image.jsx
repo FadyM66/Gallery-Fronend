@@ -16,7 +16,7 @@ const ImageDetails = () => {
 
     const handleConfirm = async (image_id) => {
         const { response, data } = await fetcher(
-            `http://localhost:8000/images/delete-image`,
+            `https://tfhmptlcmi.execute-api.eu-north-1.amazonaws.com/production/images/delete-image`,
             "POST",
             { 'image_id': image_id }
         );
@@ -32,7 +32,7 @@ const ImageDetails = () => {
     useEffect(() => {
         const fetchData = async () => {
             const { response, data } = await fetcher(
-                `http://localhost:8000/images/${image_id}`,
+                `https://tfhmptlcmi.execute-api.eu-north-1.amazonaws.com/production/images/${image_id}`,
                 "GET"
             );
             if (response.status == 200) {

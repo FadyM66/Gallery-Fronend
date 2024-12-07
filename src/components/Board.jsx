@@ -13,7 +13,7 @@ const Board = () => {
     useEffect(() => {
         const fetchData = async () => {
             const { response, data } = await fetcher(
-                "http://localhost:8000/images/",
+                "https://tfhmptlcmi.execute-api.eu-north-1.amazonaws.com/production/images/",
                 "GET"
             );
             if (response.status == 200) {

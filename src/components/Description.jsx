@@ -15,7 +15,7 @@ const Description = ({ image_id, desc }) => {
     const handleSaveClick = async () => {
 
         await fetcher(
-            "https://localhost:8000/images/update-description",
+            "https://tfhmptlcmi.execute-api.eu-north-1.amazonaws.com/production/images/update-description",
             "POST",
             { image_id, "description":editedDesc }
         );
@@ -25,7 +25,7 @@ const Description = ({ image_id, desc }) => {
     const handleGenerating = async () => {
         setIsLoading(true);
         const { response, data } = await fetcher(
-            "http://localhost:8000/images/generate-caption",
+            "https://tfhmptlcmi.execute-api.eu-north-1.amazonaws.com/production/images/generate-caption",
             "POST",
             { image_id }
         ); 

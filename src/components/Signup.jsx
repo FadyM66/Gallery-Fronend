@@ -23,7 +23,7 @@ const Singup = () => {
 
     const handleConfirm = async (inputValue) => {
         const { response, data } = await fetcher(
-            'http://localhost:8000/auth/verify-otp', 
+            'https://tfhmptlcmi.execute-api.eu-north-1.amazonaws.com/production/auth/verify-otp', 
             "POST",
             { "otp": inputValue },
             true
@@ -60,7 +60,7 @@ const Singup = () => {
         validationSchema: signupSchema,
         onSubmit: async (values) => {
             const {response, data} = await fetcher(
-                'http://localhost:8000/auth/register',
+                'https://tfhmptlcmi.execute-api.eu-north-1.amazonaws.com/production/auth/register',
                 "POST",
                 values,
                 true

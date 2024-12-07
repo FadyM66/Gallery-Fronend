@@ -36,7 +36,7 @@ const UploadCard = () => {
         }
 
         const {response, data} = await fetcher(
-            'http://localhost:8000/images/upload',
+            'https://tfhmptlcmi.execute-api.eu-north-1.amazonaws.com/production/images/upload',
             "POST",
             {"description":desc, "image":file});
 
