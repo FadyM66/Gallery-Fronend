@@ -16,8 +16,6 @@ const Board = () => {
                 "http://localhost:8000/images/",
                 "GET"
             );
-            console.log("res: ", response)
-            console.log("data: ", data)
             if (response.status == 200) {
                 setCount(data.count);
                 setImages(data.results);
