@@ -31,6 +31,8 @@ const fetcher = async (url, Method, values={}, register=false) => {
         )
 
         const data = await response.json()
+        console.log("res: ", response)
+        console.log("data: ", data)
         return { response, data }
     }
     catch {

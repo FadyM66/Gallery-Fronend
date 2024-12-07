@@ -13,9 +13,11 @@ const Board = () => {
     useEffect(() => {
         const fetchData = async () => {
             const { response, data } = await fetcher(
-                "http//localhost:8000/images/",
+                "http://localhost:8000/images/",
                 "GET"
             );
+            console.log("res: ", response)
+            console.log("data: ", data)
             if (response.status == 200) {
                 setCount(data.count);
                 setImages(data.results);
