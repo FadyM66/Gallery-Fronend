@@ -5,22 +5,22 @@ const fetcher = async (url, Method, values = {}, register = false) => {
     let body = null;
     let token = null;
 
-    log.debug(`Log..Fetching URL: ${url} with method: ${Method}`); 
+    log.info(`Log..Fetching URL: ${url} with method: ${Method}`); 
 
     if (Object.keys(values).length > 0) {
         body = new FormData();
         Object.entries(values).forEach(([key, value]) => {
             body.append(key, value);
         });
-        log.debug(`Log..Request body: ${JSON.stringify(values)}`); 
+        log.info(`Log..Request body: ${JSON.stringify(values)}`); 
     }
 
     if (!register) {
         token = Cookies.get('token');
-        log.debug('Log..Using token for authentication');
+        log.info('Log..Using token for authentication');
     } else {
         token = Cookies.get('registerToken');
-        log.debug('Log..Using register token for authentication');
+        log.info('Log..Using register token for authentication');
     }
 
     try {
